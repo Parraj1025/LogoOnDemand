@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^8.2.6"
+    "inquirer": "^8.2.6",
+    "path": "^0.12.7"
   },
   "name": "ls",
   "description": "## Your Task",

@@ -1,9 +1,10 @@
-const fs = require('fs')
+
 const inquirer = require('inquirer')
-const { circle, renderLogo } = require('./lib/circle')
-const { ellipse } = require('./lib/ellipse');
-const { polygon } = require('./lib/polygon');
-const internal = require('stream');
+const { renderLogo } = require('./lib/circle')
+const { squareLogo} = require('./lib/square')
+const {triangleLogo} = require('./lib/triangle')
+
+
 
 const shape = [
     // Define your prompt configuration here (questions, type, etc.)
@@ -18,8 +19,15 @@ const shape = [
 async function init () {
     inquirer.prompt(shape).then(async (answer) => {
         try {
+        
         if (answer.selectedShape == 'Circle') {
             renderLogo()
+        }
+        if (answer.selectedShape == 'Square'){
+            squareLogo()
+        }
+        if (answer.selectedShape == 'Triangle'){
+            triangleLogo()
         }
     }
     catch{}

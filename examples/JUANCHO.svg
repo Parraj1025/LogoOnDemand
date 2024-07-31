@@ -1,0 +1,14 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+        <g>
+            <rect
+                width ="600"
+                height="600"
+                x="10"
+                y="10"
+                style="fill: black; stroke: red; stroke-width: 2;" />
+                 <text fill="red" font-size="x-large" text-anchor="middle" x="310" y="310">
+               JUANCHO
+             </text>
+        </g>
+      </svg>
+      
